@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods and iterations</title>
+</head>
+<body>
+    <!-- Using array methods ( min 8 methods use) -->
+
+<script>
+    //const arrays 
+    const arrymethod1 = ["10","20","30","40"];
+    const arrymethod2 = ["a","b","c","d"];
+    const arrymethod3= ["qa","ab","b","c"];
+    const arrymethod4= ["1st","2nd","3rd","4th"];
+    
+    // push method 
+    // Adding elements at the end of an array   
+    document.write("==>Push method</br>");
+    document.write("Array is : "+ arrymethod1+"</br>");
+    arrymethod1.push(45);
+    document.write("Array after pushed :" + arrymethod1 + "</br></br>");
+
+    //pop method
+    // Removes the last element of the array
+    document.write("==>Pop method</br>");
+    document.write("Array is : "+ arrymethod2+"</br>");
+    arrymethod2.pop();
+    document.write("Array after pop : " +arrymethod2+"</br></br>");
+
+    //sort method 
+    //Sorts an array alphabetically
+    document.write("==>Sort method</br>");
+    document.write("Array is : "+ arrymethod3+"</br>");
+    arrymethod3.sort();
+    document.write("Array after Sort : " +arrymethod3+"</br></br>");
+
+    //reverse method 
+    // Reverses the elements in an array.
+    document.write("==>Reverse method</br>");
+    document.write("Array is : "+ arrymethod3+"</br>");
+    arrymethod3.reverse();
+    document.write("Array after Reverse : " +arrymethod3+"</br></br>");
+
+    //shift method
+    //Remove elements from the beginning of an array     
+    document.write("==>Shift method</br>");
+    document.write("Array is : "+ arrymethod4+"</br>");
+    arrymethod4.shift();
+    document.write("Array after Shift : " +arrymethod4+"</br></br>");
+
+     //unshift method
+    //Remove elements from the beginning of an array
+    document.write("==>Unshift method</br>");
+    document.write("Array is : "+ arrymethod4+"</br>");
+    arrymethod4.unshift("0th");
+    document.write("Array after Unshift : " +arrymethod4+"</br></br>");
+
+    // length
+    // returns the length or size of an array
+    let l_of_array = ["lenght","of","this","array"];
+    let size = l_of_array.length;
+    document.write("==>length</br>");
+    document.write("Array is : " + l_of_array+"</br>");
+    document.write("Lenght of this array is : " + size+"</br></br>");
+
+    // join method
+    //This method joins array elements into a string    
+    document.write("==>Join method</br>");
+    document.write("Array is : "+ arrymethod4+"</br>");
+    let ans= arrymethod4.join(" * ");
+    document.write("Array join with : " +ans + "</br></br>");
+    // document.write(arrymethod4.join(" * ")+"</br></br>"); <== 2nd method for print
+
+    // concat method
+    // creates a new array by concatenating existing arrays
+    let first = ["first", "array"];
+    let second = ["second", "array"];
+    let both = first.concat(second);
+    document.write("==>Concat method</br>");
+    document.write("1st array : " + first +"</br>");
+    document.write("2nd array : " + second +"</br>");
+    document.write("Array after concat : " + both);
+</script>
+</body>
+</html>

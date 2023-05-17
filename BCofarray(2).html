@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods and iterations</title>
+</head>
+<body>
+    <!-- Using array iteration create examples ( min 8 iteration use ) -->
+<script>
+    // const array
+    const arr1 = [2,3,4,5];
+
+    // forEach  
+    document.write("==> forEach</br>");    
+    arr1.forEach(myFunction);    
+    function myFunction(arr1){
+        // console.log(value);        
+        document.write(arr1+"</br>");
+    }
+
+    //map
+    document.write("</br>==> map</br>");
+    arr1.map(Function);    
+    function Function(arr1){
+        // console.log(val);        
+        document.write(arr1+"</br>");
+    }
+
+    //return value
+    document.write("</br>==> Return value </br>");
+    let no2 = arr1.map(arr);
+    document.write("Array is : " + arr1 +"</br>");
+    document.write("Array after  : " + no2 +"</br>");
+    function arr(arr1){
+        return arr1 * 2;
+    }
+
+    //Reduce
+    document.write("</br>==> Reduce </br>");
+    let sum = arr1.reduce(reducemethod);
+    document.write("Array is : "+arr1 + "</br>");
+    document.write("Sum of this array is : " +sum+"</br>");
+    function reducemethod(total,sum) {
+        return total + sum ;
+    }
+
+    // every Method
+    //checks if all array values pass a test.
+    document.write("</br>==> Every method </br>");
+    let every_method = arr1.every(everymethod);
+    document.write("Array is : " + arr1 + "</br>");
+    document.write("It checks if all array element pass a test .</br> ")
+    document.write("Ans is : " + every_method + "</br>");
+    function everymethod(ever) {
+         return ever > 10; // it checks if the all element of array is greater than 10 using the condition ever > 10.
+                            //  If the condition is true, the function returns true; otherwise, it returns false.
+    }
+
+     // find Method
+    //returns the value of the first array element that passes a test function
+    document.write("</br>==> Find method </br>");
+    let find_method = arr1.find(findmethod);
+    document.write("Array is : " + arr1 + "</br>");  
+    document.write("The first element in this array is grater than 2 is : " + find_method + "</br>");
+    function findmethod(find){
+         return find > 2;  // finds the first element in the array  that is greater than 2 using the find() method 
+    }
+
+      // every Method
+    //checks if all array values pass a test.
+    document.write("</br>==> Some method </br>");
+    let some_method = arr1.some(somemethod);
+    document.write("Array is : " + arr1 + "</br>");
+    document.write("It checks if some array element pass a test .</br> ")
+    document.write("Ans is : " + some_method + "</br>");
+    function somemethod(some) {
+         return some < 10; // it checks if the some element of array is less than 10 using the condition some < 10.
+                            //  If the condition is true, the function returns true; otherwise, it returns false.
+    }
+
+    //Array.from() method 
+    document.write("</br>==> Array.from() method </br>");
+    let from_method = ("23423");
+    let myArr = Array.from(from_method);
+    document.write("String is : " + from_method + "</br>");
+    document.write("Array from a string : " + myArr + "</br>");
+
+
+    // key method 
+    document.write("</br>==> key method </br>");
+    let key_method = arr1.keys();
+    let text = "";
+    for (let x=0 ; x <arr1.length ; x++) {
+       text += x + " ";
+    }
+    document.write("Array is : " + arr1 + "</br>");
+    document.write("keys of this array : " + text);
+</script>
+</body>
+</html>
