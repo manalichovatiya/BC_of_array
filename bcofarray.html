@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array methods and iterations</title>
+</head>
+<body>
+    <!-- Basic calculations of array -->
+
+    <script>
+
+    //sum of array
+    let arr = [10,5,3,34];
+    let sum = 0;
+    document.write("Array is : "+arr+"</br>");
+    for(let i=0;i<arr.length;i++){
+        sum+= arr[i];
+    }
+    document.write("Sum of all element is: "+ sum +"</br></br>");
+
+    let array1 = [1, 2, 3,4 ,5,6];
+    let array2 = [4, 5, 6];
+    let answer = [];
+    // Calculate the sum of corresponding elements with condition
+    for (let i = 0; i < array1.length; i++){
+        if((array1[i]!=null && array2[i]!=null) && (array1[i]!=undefined && array2[i]!=undefined)){
+           answer.push(array1[i] + array2[i]);
+        }      
+    }
+    document.write("first array : " + array1 + "</br>");
+    document.write("second array : "+ array2 +"</br>");
+    document.write("Sum of corresponding elements with condition :" + answer + "</br></br>");  // Output: [5, 7, 9]
+
+    // Calculate the sum of corresponding elements
+    let arra1 = [1,2,3,4];
+    let arra2 = [5,6,7,8];
+    let arra3 = [3,5,6,7];
+    let  sum_sum = [];
+    for(let c = 0; c < arra1.length; c++){
+        sum_sum.push(arra1[c] + arra2[c] + arra3[c]);
+    }
+    document.write("1st array : " + arra1 + "</br>");
+    document.write("2nd array : "+arra2 +"</br>");
+    document.write("3rd array : "+arra3+"</br>");
+    document.write("Sum of corresponding elements :" + sum_sum+"</br></br>"); // Output: [5, 7, 9]
+
+      //Multiplication of corresponding elements
+    let addition1 = [1,2,3,4];
+    let addition2 = [5,6,7,8];
+    let  add_of = [];
+    for(var a = 0; a < addition1.length; a++){
+        add_of.push(addition1[a] * addition2[a]);
+    }
+    document.write("1st array : " + addition1 + "</br>");
+    document.write("2nd array : "+addition2 +"</br>");
+    document.write("Multiplication of corresponding elements :" + add_of +"</br></br>");
+
+
+      //Division of corresponding elements
+    let dividearray1 = [12,15,16,20];
+    let dividearray2 = [4,5,4,2];
+    let  divid_of = [];
+    for(var d = 0; d < dividearray1.length; d++){
+        divid_of.push(dividearray1[d] / dividearray2[d]);
+    }
+    document.write("1st array : " + dividearray1 + "</br>");
+    document.write("2nd array : "+dividearray2 +"</br>");
+    document.write("Division of corresponding elements :" + divid_of +"</br></br>");
+
+
+    //Subtraction of corresponding elements
+    let subtract1 = [13,34,21,12];
+    let subtract2 = [45,6,45,34];
+    let  sub_of = [];
+    for(var s = 0; s < subtract1.length; s++){
+        sub_of.push(subtract1[s] - subtract2[s]);
+    }
+    document.write("1st array : " + subtract1 + "</br>");
+    document.write("2nd array : "+subtract2 +"</br>");
+    document.write("Subtraction of corresponding elements :" + sub_of +"</br></br>");
+
+    
+    </script>
+</body>
+</html>
